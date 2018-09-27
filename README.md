@@ -1,13 +1,5 @@
 ## LambdAuth
 
-[![Join the chat at https://gitter.im/danilop/LambdAuth](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/danilop/LambdAuth?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-**Note:**
-- I released an updated version of this application in the code of my [AWS Lambda in Action book](https://www.manning.com/books/aws-lambda-in-action)
-- Please look for `SampleAuth` in the `Chapter10/` folder of the book repo https://github.com/danilop/AWS_Lambda_in_Action
-- A live demo of this new version is available at https://eventdrivenapps.com/#livedemos
-- For a production-ready solution, you can check [Amazon Cognito User Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html)
-
 A sample authentication service implemented with a server-less architecture, using [AWS Lambda](http://aws.amazon.com/lambda/) to host and execute the code and [Amazon DynamoDB](http://aws.amazon.com/dynamodb/) as persistent storage. This provides a cost-efficient solution that is scalable and highly available.
 
 The authentication can be used with [Amazon Cognito](http://aws.amazon.com/cognito/) to assume an Authenticated Role via [Developer Authenticated Identities](http://docs.aws.amazon.com/cognito/devguide/identity/developer-authenticated-identities/).
@@ -23,14 +15,6 @@ Passwords are not saved in clear in the database, but "salted" (via [HMAC-SHA1](
 [Amazon SES](http://aws.amazon.com/ses/) is used to send all emails. 
 
 The login function is calling in the backend [GetOpenIdTokenForDeveloperIdentity](http://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_GetOpenIdTokenForDeveloperIdentity.html), a Cognito API to register (or retrieve) the IdentityId and an OpenID Connect token for a user authenticated by your backend authentication process.
-
-A sample implementation can be found at [http://lambdauth.danilop.net](http://lambdauth.danilop.net).
-
-## License
-
-Copyright (c) 2015 Danilo Poccia, http://danilop.net
-
-This code is licensed under the The MIT License (MIT). Please see the LICENSE file that accompanies this project for the terms of use.
 
 ## Installation
 
