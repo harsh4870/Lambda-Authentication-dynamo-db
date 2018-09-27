@@ -1,0 +1,15 @@
+{
+  "AWS_ACCOUNT_ID": "",
+  "CLI_PROFILE": "default",
+  "REGION": "us-east-1",
+  "BUCKET": "",
+  "MAX_AGE": "10",
+  "CRYPTO_BYTE_SIZE": 128,
+  "DDB_TABLE": "",
+  "IDENTITY_POOL_NAME": "",
+  "DEVELOPER_PROVIDER_NAME": "login.abc.myapp",
+  "EXTERNAL_NAME": "My Authentication",
+  "EMAIL_SOURCE": "email@example.com",
+  "VERIFICATION_PAGE": "http://lambda-authentication-harsh.s3.amazonaws.com/verify.html",
+  "RESET_PAGE": "http://lambda-authentication-harsh.s3.amazonaws.com/reset.html"
+}
