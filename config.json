@@ -10,6 +10,6 @@
   "DEVELOPER_PROVIDER_NAME": "login.abc.myapp",
   "EXTERNAL_NAME": "My Authentication",
   "EMAIL_SOURCE": "email@example.com",
-  "VERIFICATION_PAGE": "http://lambda-authentication-harsh.s3.amazonaws.com/verify.html",
-  "RESET_PAGE": "http://lambda-authentication-harsh.s3.amazonaws.com/reset.html"
+  "VERIFICATION_PAGE": "http://S3 URL/verify.html",
+  "RESET_PAGE": "http://S3 URL/reset.html"
 }
